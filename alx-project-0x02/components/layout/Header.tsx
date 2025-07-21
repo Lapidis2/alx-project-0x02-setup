@@ -1,22 +1,19 @@
+import React from 'react';
 import Link from 'next/link';
-export default function Header(){
-	return(
-		<header>
-			<h1>Welcome to My Project</h1>
-			<nav>
-				<ul>
-					<li>
-						<Link href="/home">Home</Link>
-					</li>
-					<li>
-						<Link href="/about">About</Link>
-					</li>
-					<li>
-						<Link href="/contact">Contact</Link>	
-					</li>
 
-				</ul>
-			</nav>
-		</header>
-	)
-}
+const Header = () => {
+  return (
+    <header className="bg-gray-100 p-4 mb-8 shadow">
+      <nav className="container mx-auto flex space-x-6">
+        <Link href="/home" className="text-blue-600 hover:text-blue-800 font-semibold">Home
+        </Link>
+        <Link href="/about" className="text-blue-600 hover:text-blue-800 font-semibold">About
+        </Link>
+        <Link href="/posts" className="text-blue-600 hover:text-blue-800 font-semibold">Posts
+        </Link>
+      </nav>
+    </header>
+  );
+};
+
+export default Header;

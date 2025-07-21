@@ -1,7 +1,7 @@
 import Card from "@/components/common/Card";
 import React,{useState} from "react"
 import PostModal from "@/components/common/PostModal";
-
+import Header from "@/components/layout/Header";
 
 
 export default function Home() {
@@ -12,8 +12,9 @@ export default function Home() {
 	  };
   return (
 <>
+<Header/>
       <div className="p-4">
-        <h1>Home Page</h1>
+       
         <p>Welcome to the home page of my project!</p>
         <button
           onClick={() => setIsModalOpen(true)}
