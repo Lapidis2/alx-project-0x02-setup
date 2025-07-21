@@ -6,7 +6,7 @@ export default function Home() {
 	
    <div >
       <h1>Home Page</h1>
-      <p>Welcome to the home page of my project!</p>
+      <p>Welcome to the home page of my project</p>
     </div>
 
 
