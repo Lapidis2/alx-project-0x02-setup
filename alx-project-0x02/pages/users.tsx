@@ -7,7 +7,7 @@ interface UsersPageProps {
   users: UserProps[];
 }
 
-const Users = ({ users }: UsersPageProps) => {
+const Users: React.FC<UsersPageProps> = ({ users }) => {
   return (
     <>
       <Header />
