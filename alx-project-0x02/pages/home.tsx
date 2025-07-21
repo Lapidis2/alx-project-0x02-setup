@@ -12,12 +12,12 @@ export default function Home() {
 	  };
   return (
 <>
-      <div>
+      <div className="p-4">
         <h1>Home Page</h1>
         <p>Welcome to the home page of my project!</p>
         <button
           onClick={() => setIsModalOpen(true)}
-          style={{ marginTop: 20, padding: "8px 16px", fontSize: 16 }}
+          className=" mt-4 border bg-blue-400"
         >
           Add New Post
         </button>

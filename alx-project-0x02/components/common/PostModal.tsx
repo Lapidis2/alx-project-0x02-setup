@@ -13,7 +13,7 @@ const PostModal: React.FC<PostModalProps> = ({ isOpen, onClose, onSubmit }) => {
     onClose();
   };
   return (
-    <div>
+    <div className="p-4">
       <form
         onSubmit={handleSubmit}
         className="bg-blue-500 p-4 rounded-lg shadow-md text-2xl"
