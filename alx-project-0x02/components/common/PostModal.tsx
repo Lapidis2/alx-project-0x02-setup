@@ -20,22 +20,20 @@ const PostModal: React.FC<PostModalProps> = ({ isOpen, onClose, onSubmit }) => {
       >
         <label>
           Title:
-          <br />
           <input
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
-        </label>
+        </label> <br/>
 		<label>
-          Title:
-          <br />
+          Content:
           <input
             type="text"
             value={content}
             onChange={(e) => setContent(e.target.value)}
           />
-        </label>
+        </label> <br/>
 		<button type="submit" className="bg-blue-700 text-white p-2 rounded">
 			add post
 		</button>

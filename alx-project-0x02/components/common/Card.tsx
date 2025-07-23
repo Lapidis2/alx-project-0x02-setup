@@ -3,7 +3,7 @@ import { type CardProps } from "@/interfaces";
 
 const Card: React.FC<CardProps> = ({ title, content }) => {
   return (
-    <div className="w-full bg-blue-500 p-4 rounded-lg shadow-md ">
+    <div className="border rounded-lg shadow-emerald-50 p-6 bg-white hover:shadow-lg  transition mb-4 hover:scale-110">
       <h2 >{title}</h2>
       <p >{content}</p>
     </div>

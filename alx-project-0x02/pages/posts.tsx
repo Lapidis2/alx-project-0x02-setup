@@ -12,8 +12,8 @@ const Posts = ({ posts }: PostsPageProps) => {
     <>
       <Header />
       <main className="container mx-auto p-4">
-        <h1 className="text-3xl font-bold mb-6">Posts</h1>
-        <div className="grid gap-6">
+        <h1 className="text-3xl font-bold mb-6 text-center">Posts</h1>
+        <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (
             <PostCard
               key={post.id}
